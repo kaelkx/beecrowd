@@ -1,0 +1,21 @@
+using System;
+using System.Globalization;
+
+namespace AulaBeecrowd
+{
+    class Program { 
+        static void Main(string[] args)
+        {
+            Double Valor = (4/3.0);
+            Double PI = 3.14159;
+
+           Double R = double.Parse(Console.ReadLine());
+
+           Double volume = Valor * PI * Math.Pow(R, 3);
+
+            Console.WriteLine("VOLUME = " + volume.ToString("F3",CultureInfo.InvariantCulture));
+
+
+        }
+    }
+}

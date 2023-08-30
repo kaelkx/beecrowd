@@ -1,0 +1,23 @@
+using System;
+using System.Globalization;
+
+namespace AulaBeecrowd
+{
+    class Program { 
+        static void Main(string[] args)
+        {
+            String[] valores = Console.ReadLine().Split(' ');
+            double A = double.Parse(valores[0]);
+            double B = double.Parse(valores[1]);
+            double C = double.Parse(valores[2]);
+
+            double MaiorAB = (A + B + Math.Abs (A - B)) / 2;
+            double Maior = (MaiorAB + C + Math.Abs (MaiorAB - C)) / 2;
+
+            Console.WriteLine($"{Maior} eh o maior");
+
+            Console.ReadLine();
+
+        }
+    }
+}
